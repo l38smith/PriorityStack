@@ -20,27 +20,22 @@ public Integer nextReading() {
 		returnValue = null;
 		break;
 		
-		
 		}
 		
-		
-try {
+	try {
 	returnValue = new Integer(userInput);
 	break;
-} catch (NumberFormatException e) {
+    } 
+	catch (NumberFormatException e) {
 	System.out.printf(" %n \"%s\" is not an integer. Try again.%n%n",userInput);
 	
-}
-
-
-}
+	}
+      }
 
 return returnValue;
 
 }
-
-
-}
+  }
 
 
 

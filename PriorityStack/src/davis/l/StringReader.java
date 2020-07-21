@@ -34,15 +34,12 @@ public String nextString() {
 		System.out.printf(" %n \"%s\" is not an string. Try again.%n%n", userInput);
 		
 	}
-
-
-	}
+     }
 
 	return returnValue;
 
 	}
-
-	}
+  	 }
 
 
 

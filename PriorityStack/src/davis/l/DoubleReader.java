@@ -27,20 +27,16 @@ public Double nextDouble() {
 try {
 	returnValue = new Double (userInput);
 	break;	
-	
-
-} catch (NumberFormatException e) {
+	}
+ catch (NumberFormatException e) {
 	System.out.printf(" %n \"%s\" is not a double. Try again.%n%n",userInput);
 	
-}
-
-
-}
+ }
+   }
 
 return returnValue;
 }
-
-}
+  }
 
 
 

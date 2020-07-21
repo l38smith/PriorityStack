@@ -11,8 +11,6 @@ public class PriorityStack< T extends Comparable<T>> {
 	public PriorityStack() {
 	st = new LinkedList<> ();
 		
-		
-		
 }
 
 public void push(T pushValue) { // method to push
@@ -25,7 +23,7 @@ public T peek() {
 		return null;}
 	else {
 		return st.get(0);
-	}
+ }
 }
 public T pop() {     // method to pop
 	T retval = peek();
@@ -41,7 +39,6 @@ public int size() {
 return st.size();
 
 }
+ }
 
-
-}
 

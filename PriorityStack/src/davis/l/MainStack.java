@@ -14,17 +14,17 @@ public static void main(String[] args) {
 
 	System.out.print(" \nSelection:");
   
-	do {
+	 do {
 		
 		choice = sc.nextLine();
 
     
 	
-	 if  (choice.trim() == null || choice.trim().equals(" ")) {
-		 System.out.println("Ooops, try again!");
-		 System.out.print(" \nSelection:");
+	 if (choice.trim() == null || choice.trim().equals(" ")) {
+		System.out.println("Ooops, try again!");
+		System.out.print(" \nSelection:");
 		 
-		  }
+		}
 	
 	 else {
 		 switch (choice) {
@@ -40,19 +40,14 @@ public static void main(String[] args) {
 			 }
 			  			 
 			 while (!stack.isEmpty()) {
-			
-			 
+						 
              System.out.printf( "%d ",  stack.pop());
-             	  
-					     
+             					     
 			 }
-
 				 m.menu();
 				 System.out.print(" \nSelection:");
-				 
 				 break;
-			 
-		  
+				  
 		 case "2":
 			
 			 System.out.printf("%n      Doubles%n%n ");
@@ -63,39 +58,32 @@ public static void main(String[] args) {
 			 
 			 }		 
 			 
-			 
 			while (!dstack.isEmpty()) {
-				   			  
-							  
+			  
 			System.out.printf( " %.1f   ",   dstack.pop());	
 			 	
 			 }
-			 
-			 	 m.menu();
+			  	 m.menu();
 				 System.out.print(" \nSelection:");
-				 
 				 break;
 		    
-		 
-		 case "3":
+		  case "3":
 			 System.out.printf("%n   Strings%n%n");
 			 PriorityStack<String> sStack = new PriorityStack<> ();
 			 StringReader sReader =  new StringReader ();
 			 for (String j=sReader.nextString(); j!=null; j=sReader.nextString()) {
 			 sStack.push(j);
-				 }
+				 
+			 }
 
 			while (!sStack.isEmpty()) {
 				 
 			System.out.print( sStack.pop() + "   ");	
 			      
-			      
-			      } 
-			 	 
-		 
-			      m.menu();
+			} 
+			       	 
+		 	      m.menu();
 				  System.out.print(" \nSelection:");
-				  
 				  break;
 			 
 		 case "4":
@@ -109,6 +97,9 @@ public static void main(String[] args) {
 			 System.out.print("Selection:");
 			 break;
 	}
-	}
-}while(true);
-}}
+	 }
+      }
+	
+	    while(true);
+}
+ }

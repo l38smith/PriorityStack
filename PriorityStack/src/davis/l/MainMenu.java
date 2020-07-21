@@ -10,11 +10,6 @@ public void menu() {
 	System.out.println("2)     Doubles");
 	System.out.println("3)     Strings");
 	System.out.println("4)     EXIT");
-	
-	 
-	
 }
-
-
-}
+ }
 
